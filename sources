@@ -1,4 +1,0 @@
-#!/bin/bash
-# Minha pessoal sources.list
-rm /etc/apt/sources.list
-cp /home/alan/debian/sources.list /etc/apt/

@@ -1,0 +1,9 @@
+#!/bin/bash
+rm /etc/apt/sources.list
+cp /home/alan/debian/sources.list /etc/apt/
+sudo apt update && sudo apt upgrade 
+sudo apt install bspwm sxhkd rofi
+mkdir -p ~/.config/{bspwm,sxhkd}
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+chmod +x ~/.config/bspwm/bspwmrc ~/.config/sxhkd/sxhkdrc

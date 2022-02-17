@@ -1,0 +1,17 @@
+#!/bin/bash
+rm /etc/apt/sources.list
+cp /home/alan/debian/setup/sources.list /etc/apt/
+apt update && sudo apt upgrade
+rm /etc/sudoers
+cp /home/alan/debian/sudoers /etc
+rm /etc/profile
+cp /home/alan/debian/setup/profile /etc
+cd /home/alan/debian/setup
+dpkg -i google-chrome-stable_current_amd64.deb
+
+
+sudo apt install bspwm sxhkd rofi
+mkdir -p ~/.config/{bspwm,sxhkd}
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+chmod +x ~/.config/bspwm/bspwmrc ~/.config/sxhkd/sxhkdrc

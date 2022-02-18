@@ -1,0 +1,10 @@
+#!/bin/bash
+rm /etc/apt/sources.list
+cp /home/alan/debian/setup/sources.list /etc/apt/
+apt update && sudo apt upgrade
+rm /etc/profile
+cp /home/alan/debian/setup/profile /etc
+source /etc/profile
+cd /home/alan/debian/setup
+dpkg -i google-chrome-stable_current_amd64.deb
+apt -f install -s

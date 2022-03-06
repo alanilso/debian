@@ -1,0 +1,7 @@
+#!/bin/bash
+# Bspwm settings
+apt update && apt upgrade
+mkdir -p /home/alan/.config/{bspwm,sxhkd}
+cp /home/alan/debian/bspwm/autostart.sh /home/alan/.config/bspwm
+cp /home/alan/debian/bspwm/bspwmrc /home/alan/.config/bspwm
+cp /home/alan/debian/bspwm/sxhkdrc /home/alan/.config/sxhkd

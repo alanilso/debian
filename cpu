@@ -2,4 +2,4 @@
 
 CPU=$(top -n 1 -b | awk '/^%Cpu/{print $2}')
 
-notify-send -t 2750 "CPU: $CPU%"
+notify-send -t 3100 "CPU: $CPU%"

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-CPU=$(top -n 1 -b | awk '/^%Cpu/{print $2}')
-
-notify-send -t 3100 "CPU: $CPU%"
